@@ -227,7 +227,7 @@ The API will return four error types when requests fail:
 
 - Example
 
-'curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljYTZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTcyNTY0OCwiZXhwIjoxNTg5NzMyODQ4LCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwUCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.L-fo09e31ze74_xMIUOQKOEPA67XVxPFsqb_2wqpNQRvrHt1lykEIShcRJqYCi8rNJouYEhO5KE_5scatJvCI1VtrVpuIT_wwP7J8ty-K1npUZ0FWMQnJgT84JfdWIze4ZES20Ly2EwqfUya3-9w4J4nXLJztPdwKFN2VDVLif18rdExLyNLR3E5cIeirmDtE9BQ8XFh9A7NjWyb_YTcEGrZA8Fyw5DuoXfor51ab2HbRfo9wu7iw1--2p0uFktvwn_9rWFhmxNEkT34BU7QlJZPnL9a56Q9sfon3a1pvwKBpxYZr5QmRzNDHrbGy-0-y4yL6qWuBqjAqE41Eq8k9w" http://127.0.0.1:5000/drinks-detail'
+`curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljYTZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTcyNTY0OCwiZXhwIjoxNTg5NzMyODQ4LCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwUCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.L-fo09e31ze74_xMIUOQKOEPA67XVxPFsqb_2wqpNQRvrHt1lykEIShcRJqYCi8rNJouYEhO5KE_5scatJvCI1VtrVpuIT_wwP7J8ty-K1npUZ0FWMQnJgT84JfdWIze4ZES20Ly2EwqfUya3-9w4J4nXLJztPdwKFN2VDVLif18rdExLyNLR3E5cIeirmDtE9BQ8XFh9A7NjWyb_YTcEGrZA8Fyw5DuoXfor51ab2HbRfo9wu7iw1--2p0uFktvwn_9rWFhmxNEkT34BU7QlJZPnL9a56Q9sfon3a1pvwKBpxYZr5QmRzNDHrbGy-0-y4yL6qWuBqjAqE41Eq8k9w" http://127.0.0.1:5000/drinks-detail`
 
 
 ```
@@ -318,11 +318,11 @@ The API will return four error types when requests fail:
 
 ### POST '/drinks' require permission 
 'post:drinks'
-'curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/drinks -X POST -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'
+`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/drinks -X POST -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'`
 
 
 -Example
-'curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljYTZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTc0NTQzNywiZXhwIjoxNTg5NzUyNjM3LCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwUCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.t-CLvJx0zc28MiN9O9q8fwOS4Plqgn8evWa8EKTchE7HmX54rK_J8Y55n8q888x1I6iXsZ6KIqZ0x9FvU3NSP8Xhh974wuZdvxED2yHDeESe3qX8QEycIS9BYmvKhmFgnS9d2a1YmSgABLltr2wTIVMkIgj8pDyqivncFR1m8iLgFodgpGmrczpZdvjwZZeIxF3nbios5o5nQHuhAllkfuLPALuB6h0jT1PYXtE_QFFDs8vfLvjiNitXsMgFe36e-45fSS_9-kSRqSG-DA_NjCy9fByWwArBjXEfRQLIw8hLaBm7EgFT-K4zAIHGlQV7laUwuSO7r1mH8d971kposQ" http://127.0.0.1:5000/drinks -X POST -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}''
+`curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljYTZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTc0NTQzNywiZXhwIjoxNTg5NzUyNjM3LCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwUCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.t-CLvJx0zc28MiN9O9q8fwOS4Plqgn8evWa8EKTchE7HmX54rK_J8Y55n8q888x1I6iXsZ6KIqZ0x9FvU3NSP8Xhh974wuZdvxED2yHDeESe3qX8QEycIS9BYmvKhmFgnS9d2a1YmSgABLltr2wTIVMkIgj8pDyqivncFR1m8iLgFodgpGmrczpZdvjwZZeIxF3nbios5o5nQHuhAllkfuLPALuB6h0jT1PYXtE_QFFDs8vfLvjiNitXsMgFe36e-45fSS_9-kSRqSG-DA_NjCy9fByWwArBjXEfRQLIw8hLaBm7EgFT-K4zAIHGlQV7laUwuSO7r1mH8d971kposQ" http://127.0.0.1:5000/drinks -X POST -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'`
 
 ```
 {
@@ -416,10 +416,10 @@ The API will return four error types when requests fail:
 ### PATCH '/drinks/<drink_id>' require permission 
 'patch:drinks'
 
-'curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/drinks/1 -X PATCH -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'
+`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/drinks/1 -X PATCH -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'`
 
 -Example
-'curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljYTZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTczNjA3MywiZXhwIjoxNTg5NzQzMjczLCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwUCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Ywoe54ttAxguNRpKF5bSg-aUwLiJUlONBbDrIPcX9BdXN3t21L8gAgDeCoHFbjgBaU_7kx_WWO6oOuagMQ2DnSkn7Ka4NtfPXg_RHH25T3CZzuAm6nt5_65h8T7GHeSbx9wpPOtfeTQ5ZgjCOe57Zk5wLjAergt5deo7UKXoYVtTvtruUkRNoKVxlUyzzaqFC43Fw6jzuyILW4WYFwJNeZFXHm97LFv23V47AzGOf0oMBk6Tx8dUjWkSr5B-QdoE8LWzw0seijL5M09Y8oYqrXMZDoswLtQ6j7aa0FbnhKpVojjE5KGC00OrS6zdsTJsX8oTi6jR8xI6cmByvTYq0g" http://127.0.0.1:5000/drinks/1 -X PATCH -H "Content-Type: application/json" -d '{"title":"jjjj","recipe":[{"name": "k","color": "green", "parts": 2}]}'/
+`curl -H "Authorization: bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljYTZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTczNjA3MywiZXhwIjoxNTg5NzQzMjczLCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwUCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Ywoe54ttAxguNRpKF5bSg-aUwLiJUlONBbDrIPcX9BdXN3t21L8gAgDeCoHFbjgBaU_7kx_WWO6oOuagMQ2DnSkn7Ka4NtfPXg_RHH25T3CZzuAm6nt5_65h8T7GHeSbx9wpPOtfeTQ5ZgjCOe57Zk5wLjAergt5deo7UKXoYVtTvtruUkRNoKVxlUyzzaqFC43Fw6jzuyILW4WYFwJNeZFXHm97LFv23V47AzGOf0oMBk6Tx8dUjWkSr5B-QdoE8LWzw0seijL5M09Y8oYqrXMZDoswLtQ6j7aa0FbnhKpVojjE5KGC00OrS6zdsTJsX8oTi6jR8xI6cmByvTYq0g" http://127.0.0.1:5000/drinks/1 -X PATCH -H "Content-Type: application/json" -d '{"title":"jjjj","recipe":[{"name": "k","color": "green", "parts": 2}]}'`
 
 ```
 {
@@ -501,16 +501,16 @@ The API will return four error types when requests fail:
 ### DELETE '/drinks/<drink_id>' require permission 
 'delete:drinks'
 
-'curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/drinks/1 -X DELETE -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'
+`curl -H "Authorization: bearer <token>  http://127.0.0.1:5000/drinks/1 -X DELETE -H "Content-Type: application/json" -d '{"title":"jjj","recipe":[{"name": "k","color": "pink", "parts": 2}]}'`
 
 - Example
-'curl -H "Authorization: bearer eyJhbGciOi
+`curl -H "Authorization: bearer eyJhbGciOi
 JSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5Rcm1wQW1sNzZPQ2FvMWlRa1BITSJ9.eyJpc3MiOiJodHRwczovL2FyZWVnLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZWI0MDljY
 TZiNjliYzBjMTJmZjFkNjMiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTU4OTc0NTQzNywiZXhwIjoxNTg5NzUyNjM3LCJhenAiOiJqcDBKMGdqUEdNbndIcWQ5UDhNSzNaZWJjNE9ocTJwU
 CIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.t-CLvJx0zc28M
 iN9O9q8fwOS4Plqgn8evWa8EKTchE7HmX54rK_J8Y55n8q888x1I6iXsZ6KIqZ0x9FvU3NSP8Xhh974wuZdvxED2yHDeESe3qX8QEycIS9BYmvKhmFgnS9d2a1YmSgABLltr2wTIVMkI
 gj8pDyqivncFR1m8iLgFodgpGmrczpZdvjwZZeIxF3nbios5o5nQHuhAllkfuLPALuB6h0jT1PYXtE_QFFDs8vfLvjiNitXsMgFe36e-45fSS_9-kSRqSG-DA_NjCy9fByWwArBjXEfR
-QLIw8hLaBm7EgFT-K4zAIHGlQV7laUwuSO7r1mH8d971kposQ" http://127.0.0.1:5000/drinks/1 -X DELETE'
+QLIw8hLaBm7EgFT-K4zAIHGlQV7laUwuSO7r1mH8d971kposQ" http://127.0.0.1:5000/drinks/1 -X DELETE`
 
 ```
 {
