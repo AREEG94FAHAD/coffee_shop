@@ -134,7 +134,7 @@ The API will return four error types when requests fail:
 
 ### Endpoints
 
-#### [hi baby](### GET '/drinks')
+#### GET '/drinks'
 #### GET '/drinks-detail' require permission 
 'get:drinks-detail'
 #### POST '/drinks' require permission 
